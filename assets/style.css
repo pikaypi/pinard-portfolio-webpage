@@ -1,7 +1,14 @@
+/* Set up reusable colors and styles */
+:root {
+    --dark: #505;
+    --pale: #ffb;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -11,22 +18,28 @@ body {
 /* Styling for the header and nav bar */
 header {
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #fff;
-    color: #005;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--pale);
+    color: var(--dark);
 }
 
 header h1 {
     display: inline-block;
-    font-size: 3em;
+    font-size: 2em;
+    font-style: italic;
+
+}
+
+header h1 .big {
+    font-size: 2.5em;
 }
 
 header nav {
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 0;
     float: right;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+    align-items: baseline;
+    font-size: 1.5em;
 }
 
 header nav ul {
@@ -37,3 +50,39 @@ header nav ul li {
     display: inline-block;
     margin: 0;
 }
+
+/* Styling for personal information section */
+.personal {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.personal img {
+    width: 300px;
+
+}
+
+.personal h1 {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.personal p {
+    margin: 0 30px 15px 30px;
+    margin-left: 30px;
+    margin-bottom: 1em;
+
+}
+
+
+
+
+/* Styling for professional portfolio section */
+
+
+/* Styling for contact section */
+
+
+/* Styling for footer */
