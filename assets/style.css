@@ -108,6 +108,30 @@ header nav ul li {
     text-align: center;
 }
 /* Styling for contact section */
+.contact {
+    margin: 10px;
+}
 
+.contact h2 {
+    font-size: var(--h2Size);
+}
+
+.contact .contactInfo {
+    padding: 0;
+    margin: 0 0 0 0;
+    float: right;
+    font-size: 1.5em;
+}
+
+.contact ul {
+    list-style-type: none;
+    float: right;
+}
+
+.contact ul li {
+    display: inline-block;
+    margin: 10px;
+    border-style: solid;
+}
 
 /* Styling for footer */
