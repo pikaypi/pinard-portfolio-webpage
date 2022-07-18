@@ -60,7 +60,7 @@ header nav ul li {
 }
 
 .personal img {
-    width: 300px;
+    flex: 1 5 100px
 }
 
 .personal h2 {
