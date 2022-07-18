@@ -55,12 +55,12 @@ header nav ul li {
 /* Styling for personal information section */
 .personal {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 10px;
 }
 
 .personal img {
-    flex: 1 5 100px
+    flex: 1 0 100px;
 }
 
 .personal h2 {
