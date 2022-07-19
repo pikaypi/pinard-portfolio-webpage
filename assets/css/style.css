@@ -18,6 +18,8 @@ body {
 
 /* Styling for the header and nav bar */
 header {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--pale);
@@ -38,17 +40,18 @@ header h1 .big {
 nav {
     padding: 0;
     margin: 0 0 0 0;
-    float: right;
     font-size: 1.5em;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0;
+    margin: 10px;
 }
 
 /* Styling for personal information section */
@@ -59,7 +62,7 @@ nav ul li {
 }
 
 .personal img {
-    flex: 1 0 100px;
+    flex: 0 1 100px;
 }
 
 .personal h2 {
