@@ -1,7 +1,8 @@
 /* Set up reusable colors and styles */
 :root {
     --dark: #505;
-    --pale: #ffb;
+    --header: #e55;
+    --main: #ffb;
     --h2Size: 30px;
 }
 
@@ -22,7 +23,7 @@ header {
     flex-wrap: wrap;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--pale);
+    background-color: var(--header);
     color: var(--dark);
 }
 
@@ -59,6 +60,7 @@ nav ul li {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    background-color: var(--main);
 }
 
 .personal img {
@@ -84,6 +86,7 @@ nav ul li {
 /* Styling for professional portfolio section */
 .professional {
     text-align: center;
+    background-color: var(--main);
 }
 
 .professional h2 {
@@ -112,7 +115,7 @@ nav ul li {
 }
 /* Styling for contact section */
 .contact {
-    margin: 10px;
+    padding: 10px;
 }
 
 .contact h2 {
@@ -136,5 +139,3 @@ nav ul li {
     margin: 10px;
     border-style: solid;
 }
-
-/* Styling for footer */
