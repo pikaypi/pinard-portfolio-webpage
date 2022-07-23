@@ -1,37 +1,37 @@
 /* Set up reusable colors and styles */
 :root {
-    --dark: #505;
-    --header: #e55;
+    --medium: #838;
     --main: #ffb;
     --h2Size: 30px;
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
+    margin: 0;
     background-color: #ddd;
 }
 
 /* Styling for the header and nav bar */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 header {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--header);
-    color: var(--dark);
+    background-color: #505;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 header h1 {
-    display: inline-block;
+    float: left;
+    color: #aaa;
     font-size: 2em;
     font-style: italic;
-    margin-left: 10px;
+    margin: 0;
 }
 
 header h1 .big {
@@ -39,20 +39,48 @@ header h1 .big {
 }
 
 nav {
-    padding: 0;
-    margin: 0 0 0 0;
-    font-size: 1.5em;
+float: right;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 10px;
+    margin-left: 70px;
+    padding-top: 40px;
+
+    position: relative;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #777;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #777;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 100ms;
+}
+
+nav a:hover::before {
+    width: 100%;
 }
 
 /* Styling for personal information section */
