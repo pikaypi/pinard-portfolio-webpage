@@ -1,104 +1,62 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Paul Pinard's Professional Coding Portfolio</title>
+    <title>Paul Pinard</title>
 </head>
-
-<body>
-    <header>
-        <div class = "container">
-            <h1><span class="big">P</span>aul &nbsp; &nbsp;<span class="big">P</span>inard</h1>
-
-            <nav>
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
-                </ul>
-            </nav>
+<body class="bg-purple-100 p-4">
+    <!-- Header with Nav Links -->
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg shadow-lg">
+        <div class="col-span-1 p-3 inline-block align-middle">
+            <p class="text-5xl text-purple-200 md:pt-2.5">Paul Pinard</p>
         </div>
-    </header>
+        <div class="col-span-1 p-3 ">
+            <ul class="float-right text-purple-300">
+                <li class="hover:bg-purple-300 hover:rounded-lg hover:p-1 hover:text-purple-900"><a href="#about-me">About Me</a></li>
+                <li class="hover:bg-purple-300 hover:rounded-lg hover:p-1 hover:text-purple-900"><a href="#portfolio">My Portfolio</a></li>
+                <li class="hover:bg-purple-300 hover:rounded-lg hover:p-1 hover:text-purple-900"><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
 
-    <main>
-        <section class="personal" id="about-me">
+    <!-- About Me Section -->
+    <div id ="about-me" class="grid sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-4 grid-rows-1 grid-flow-row-dense p-3 gap-1 pb-10">
+        <img src="./assets/images/profile-picture.jpg" alt="Profile Picture" class="col-span-1 md:row-span-3 justify-self-center self-center rounded-lg">
+        <div class="sm:col-span-1 md:col-span-2 xl:col-span-3 bg-purple-300 rounded-lg text-purple-900 align-middle text-l p-1 lg:text-xl lg:self-center xl:text-3xl">
+            <p class="p-1 xl:p-3">My name is Paul Pinard and I am training to become a web developer. My first exposure to coding was in high school when I learned to style my MySpace page, and I have been building on that knowledge ever since. My favorite language I've learned so far is Python, and I'm most excited to learn about database management. I'm very excited to be embarking on a new professional journey and hope you will join me!</p>
+            <p class="p-1 xl:p-3">For the past 10 years I have taught public school music (and math!) in Manchester, NH. I am the music director of the Concert Orchestra at the Manchester Community Music School, and I also teach violin at Southern New Hampshire University.</p>
+            <p class="p-1 xl:p-3">In my free time I enjoy making music with friends, cooking, and running. I live in Manchester, NH with my two cats, Louie and Lizzie.</p>
+        </div>
+    </div>
 
-            <img src="./assets/images/profile-picture.jpg" alt="A picture of me finishing my first half marathon.">
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="grid gap-4 grid-cols-3 pb-10">
+        <h1 class="bg-purple-700 text-center text-3xl pb-1 text-purple-100 w-5/6 justify-self-center rounded-lg col-span-3">Examples of My Work</h1>
+        <a class="justify-self-center col-span-3 lg:w-2/3" href="https://pikaypi.github.io/extended-weekend-planner/" target="_blank">
+            <img class="rounded-lg" src="./assets/images/weekend-screenshot.png" alt="A screenshot of my Weekend Planner application">
+        </a>
+        <a class="justify-self-center w-2/3" href="https://pikaypi.github.io/daily-planner/" target="_blank">
+            <img class="rounded-lg" src="./assets/images/daily-planner-screenshot.png" alt="A screenshot of my Daily Planner application">
+        </a>
+        <a class="justify-self-center w-2/3" href="https://pikaypi.github.io/random-password-generator/" target="_blank">
+            <img class="rounded-lg" src="./assets/images/password-generator-screenshot.png" alt="A screenshot of my Password Generator application">
+        </a>
+        <a class="justify-self-center w-2/3" href="https://pikaypi.github.io/Horiseon-Homepage/" target="_blank">
+            <img class="rounded-lg" src="./assets/images/horiseon-homepage-screenshot.png" alt="A screenshot of the Horiseon Homepage that I refactored">
+        </a>
+    </div>
 
-            <article>
-                <h2>About Me</h2>
-
-                <p>
-                    My name is Paul Pinard and I am training to become a web developer. My first exposure to coding was in high school when I learned to style my MySpace page, and I have been building on that knowledge ever since. My favorite language I've learned so far is Python, and I'm most excited to learn about database management. I'm very excited to be embarking on a new professional journey and hope you will join me!
-                </p>
-
-                <p>
-                    For the past 10 years I have taught public school music (and math!) in Manchester, NH. I am the music director of the Concert Orchestra at the Manchester Community Music School, and I also teach violin at Southern New Hampshire University.
-                </p>
-
-                <p>
-                    In my free time I enjoy making music with friends, cooking, and running. I live in Manchester, NH with my two cats, Louie and Lizzie.
-                </p>
-            </article>
-
-        </section>
-
-        <section class="professional" id="work">
-            <h2>My Portfolio</h2>
-
-            <article class="leadProject">
-                <a href="https://pikaypi.github.io/Horiseon-Homepage/" target="_blank">
-                    <img src="./assets/images/horiseon-anchor-image.jpg" alt="placeholder image">
-                </a>
-            </article>
-
-            <article class="generalProjects">
-                <article class="project">
-                    <p>
-                        MORE
-                    </p>
-                </article>
-
-                <article class="project">
-                    <p>
-                        PROJECTS
-                    </p>
-                </article>
-
-                <article class="project">
-                    <p>
-                        COMING
-                    </p>
-                </article>
-
-                <article class="project">
-                    <p>
-                        SOON
-                    </p>
-                </article>
-            </article>
-        </section>
-
-        <section class="contact" id="contact-me">
-            <h2>Contact Me</h2>
-            
-            <ul class="contact">
-                <li>
-                    Phone: 603.620.6894
-                </li>
-                <li>
-                    Email: <a href="mailto:paul.k.pinard@gmail.com">paul.k.pinard@gmail.com</a>
-                </li>
-                <li>
-                    GitHub: <a href="https://github.com/pikaypi" target="_blank">Pikaypi</a>
-                </li>
-
-        </section>
-    </main>
-
+    <!-- Contact Section -->
+    <div id="contact" class="grid gap-4 sm:grid-cols-1 md:grid-cols-3">
+        <h1 class="bg-purple-700 text-center text-3xl pb-1 text-purple-100 w-5/6 justify-self-center rounded-lg sm:col-span-1 md:col-span-3">Contact Me</h1>
+        <p class="text-center">Phone: 603.620.6894</p>
+        <p class="text-center">Email: <a  class="text-purple-700 underline" href="mailto:paul.k.pinard@gmail.com">paul.k.pinard@gmail.com</a></p>
+        <p class="text-center">GitHub: <a class="text-purple-700 underline" href="https://github.com/pikaypi" target="_blank">Pikaypi</a></p>
+    </div>
 </body>
 </html>
